@@ -147,5 +147,17 @@
   </footer>
 
   <script src="zaha.js"></script>
-</body>
+<script>
+// Force browser to always load the latest version
+(function() {
+  const version = 'v2.0.1'; // يمكنك تغيير الرقم مع كل تحديث جديد
+  const links = document.querySelectorAll('link[rel="stylesheet"], script[src]');
+  links.forEach(el => {
+    const attr = el.tagName === 'LINK' ? 'href' : 'src';
+    const url = new URL(el.getAttribute(attr), location.origin);
+    url.searchParams.set('v', version);
+    el.setAttribute(attr, url.toString());
+  });
+})();
+</script></body>
 </html>
