@@ -1,13 +1,14 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <!-- ALJELANI STUDIO © 2025 — Zaha‑inspired Redesign -->
+  <!-- ALJELANI STUDIO © 2025 — Monochrome (Black & White) -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>ALJELANI STUDIO — Interior Architecture</title>
-  <meta name="description" content="ALJELANI STUDIO — Zaha‑inspired parametric, fluid portfolio.">
+  <meta name="description" content="ALJELANI STUDIO — Parametric, fluid portfolio in black & white.">
+  <!-- Apple-like typography (Inter) -->
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;800&family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="zaha.css">
 </head>
 <body>
@@ -16,13 +17,24 @@
   <header class="nav">
     <div class="nav__inner">
       <a class="brand" href="#top" aria-label="ALJELANI STUDIO">
-        <span class="brand__glyph" aria-hidden="true">✦</span>
+        <!-- Geometric icon from the studio logo (white) -->
+        <svg class="brand__icon" viewBox="0 0 64 64" aria-hidden="true" role="img">
+          <g fill="none" stroke="#fff" stroke-width="3" stroke-linecap="square">
+            <path d="M18 10 L18 54" />
+            <path d="M18 10 Q18 38 42 42" />
+            <path d="M32 14 L32 48" />
+            <path d="M32 14 L52 24" />
+            <path d="M8 28 H28" />
+            <path d="M10 46 H36" />
+            <path d="M24 46 V58" />
+          </g>
+        </svg>
         <span class="brand__name">ALJELANI STUDIO</span>
       </a>
       <nav class="menu" aria-label="Primary">
         <a href="#work">Work</a>
         <a href="#ethos">Ethos</a>
-        <a href="#contact" class="btn btn--gold">Contact</a>
+        <a href="#contact" class="btn btn--ghost">Contact</a>
       </nav>
     </div>
   </header>
@@ -31,85 +43,44 @@
     <!-- HERO -->
     <section class="hero" id="top" aria-label="Hero">
       <div class="hero__bg" aria-hidden="true">
-        <!-- flowing parametric ribbons -->
+        <!-- grayscale flowing ribbons -->
         <svg viewBox="0 0 1440 560" preserveAspectRatio="none">
           <defs>
             <linearGradient id="g1" x1="0" y1="0" x2="1" y2="0">
-              <stop offset="0" stop-color="#0A0A0A"/>
-              <stop offset="1" stop-color="#161616"/>
+              <stop offset="0" stop-color="#000000"/>
+              <stop offset="1" stop-color="#0d0d0d"/>
             </linearGradient>
             <linearGradient id="g2" x1="0" y1="0" x2="1" y2="1">
-              <stop offset="0" stop-color="#D4AF37" stop-opacity=".18"/>
-              <stop offset="1" stop-color="#D4AF37" stop-opacity=".02"/>
+              <stop offset="0" stop-color="#ffffff" stop-opacity=".10"/>
+              <stop offset="1" stop-color="#ffffff" stop-opacity=".00"/>
             </linearGradient>
           </defs>
           <rect width="1440" height="560" fill="url(#g1)"/>
           <path d="M0,420 C220,360 320,520 580,480 C820,444 1020,300 1440,360 L1440,560 L0,560 Z" fill="url(#g2)"/>
-          <path d="M0,260 C240,320 420,160 740,240 C1040,316 1180,120 1440,180 L1440,560 L0,560 Z" fill="url(#g2)" opacity=".5"/>
+          <path d="M0,260 C240,320 420,160 740,240 C1040,316 1180,120 1440,180 L1440,560 L0,560 Z" fill="url(#g2)" opacity=".45"/>
         </svg>
       </div>
       <div class="hero__content">
         <p class="eyebrow">INTERIOR ARCHITECTURE</p>
         <h1>Fluid lines.<br><span class="outline">Parametric calm.</span></h1>
-        <p class="lede">A studio shaping light and material into continuous, future‑forward interiors.</p>
+        <p class="lede">A studio shaping light and material into continuous, future-forward interiors.</p>
         <div class="cta">
-          <a href="#work" class="btn btn--gold">Explore Work</a>
+          <a href="#work" class="btn btn--solid">Explore Work</a>
           <a href="mailto:info@aljelanistudio.com" class="btn btn--ghost">Start a Project</a>
         </div>
       </div>
-    </section>
-
-    <!-- SIGNATURE STRIP -->
-    <section class="strip" aria-hidden="true">
-      <div class="strip__wave"></div>
     </section>
 
     <!-- WORK -->
     <section class="work" id="work" aria-labelledby="work-title">
       <h2 id="work-title" class="title">Selected Work</h2>
       <div class="cards">
-        <article class="tile">
-          <div class="media m1" role="img" aria-label="Curvilinear Café — Jeddah"></div>
-          <div class="meta">
-            <h3>Curvilinear Café</h3>
-            <p>Jeddah — resin curves, matte brass, light gradients.</p>
-          </div>
-        </article>
-        <article class="tile">
-          <div class="media m2" role="img" aria-label="Parametric Lobby — Malaysia"></div>
-          <div class="meta">
-            <h3>Parametric Lobby</h3>
-            <p>Malaysia — fluid shell, travertine planes.</p>
-          </div>
-        </article>
-        <article class="tile">
-          <div class="media m3" role="img" aria-label="Academy Spine — Riyadh"></div>
-          <div class="meta">
-            <h3>Academy Spine</h3>
-            <p>Riyadh — clear circulation, composite ribbons.</p>
-          </div>
-        </article>
-        <article class="tile">
-          <div class="media m4" role="img" aria-label="Digital Gallery — Jeddah"></div>
-          <div class="meta">
-            <h3>Digital Gallery</h3>
-            <p>Immersive canvas of light and shadow.</p>
-          </div>
-        </article>
-        <article class="tile">
-          <div class="media m5" role="img" aria-label="Villa Flow — Japandi"></div>
-          <div class="meta">
-            <h3>Villa Flow</h3>
-            <p>Oak, linen, curved plaster — serene tactility.</p>
-          </div>
-        </article>
-        <article class="tile">
-          <div class="media m6" role="img" aria-label="Lounge — Gold/Black"></div>
-          <div class="meta">
-            <h3>Black/Gold Lounge</h3>
-            <p>Quiet acoustics, luminous seams.</p>
-          </div>
-        </article>
+        <article class="tile"><div class="media m1" role="img" aria-label="Curvilinear Café — Jeddah"></div><div class="meta"><h3>Curvilinear Café</h3><p>Jeddah — resin curves, matte textures, soft light.</p></div></article>
+        <article class="tile"><div class="media m2" role="img" aria-label="Parametric Lobby — Malaysia"></div><div class="meta"><h3>Parametric Lobby</h3><p>Malaysia — fluid shell, travertine planes.</p></div></article>
+        <article class="tile"><div class="media m3" role="img" aria-label="Academy Spine — Riyadh"></div><div class="meta"><h3>Academy Spine</h3><p>Riyadh — clear circulation, composite ribbons.</p></div></article>
+        <article class="tile"><div class="media m4" role="img" aria-label="Digital Gallery — Jeddah"></div><div class="meta"><h3>Digital Gallery</h3><p>Immersive canvas of light and shadow.</p></div></article>
+        <article class="tile"><div class="media m5" role="img" aria-label="Villa Flow — Japandi"></div><div class="meta"><h3>Villa Flow</h3><p>Oak, linen, curved plaster — serene tactility.</p></div></article>
+        <article class="tile"><div class="media m6" role="img" aria-label="Lounge — Monochrome"></div><div class="meta"><h3>Monochrome Lounge</h3><p>Acoustic calm, luminous seams.</p></div></article>
       </div>
     </section>
 
@@ -133,7 +104,7 @@
         <h2>Let’s shape a fluid interior.</h2>
         <p>info@aljelanistudio.com · Jeddah, Saudi Arabia · +966 543 663 332</p>
         <div class="cta">
-          <a class="btn btn--gold" href="mailto:info@aljelanistudio.com">Email</a>
+          <a class="btn btn--solid" href="mailto:info@aljelanistudio.com">Email</a>
           <a class="btn btn--ghost" href="https://wa.me/966543663332" target="_blank" rel="noopener">WhatsApp</a>
           <a class="btn btn--ghost" href="https://instagram.com/aljelanistudio" target="_blank" rel="noopener">Instagram</a>
           <a class="btn btn--ghost" href="https://www.linkedin.com/in/ali-aljelani-078a8b14a" target="_blank" rel="noopener">LinkedIn</a>
@@ -146,18 +117,20 @@
     <p>© 2025 ALJELANI STUDIO</p>
   </footer>
 
+  <!-- Assets + cache-busting -->
   <script src="zaha.js"></script>
-<script>
-// Force browser to always load the latest version
-(function() {
-  const version = 'v2.0.1'; // يمكنك تغيير الرقم مع كل تحديث جديد
-  const links = document.querySelectorAll('link[rel="stylesheet"], script[src]');
-  links.forEach(el => {
-    const attr = el.tagName === 'LINK' ? 'href' : 'src';
-    const url = new URL(el.getAttribute(attr), location.origin);
-    url.searchParams.set('v', version);
-    el.setAttribute(attr, url.toString());
-  });
-})();
-</script></body>
+  <script>
+  (function() {
+    const version = 'v2.0.4';
+    const nodes = document.querySelectorAll('link[rel="stylesheet"], script[src]');
+    nodes.forEach(el => {
+      const attr = el.tagName === 'LINK' ? 'href' : 'src';
+      const url = new URL(el.getAttribute(attr), location.origin);
+      url.searchParams.set('v', version);
+      el.setAttribute(attr, url.toString());
+    });
+    try{ console.log('ALJELANI STUDIO build', version); }catch(e){}
+  })();
+  </script>
+</body>
 </html>
